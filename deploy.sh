@@ -1,6 +1,6 @@
 docker build -t ckilcioglu/multi-client:latest -t ckilcioglu/multi-client:$SHA -f ./client/Dockerfile.dev ./client
 docker build -t ckilcioglu/multi-server:latest -t ckilcioglu/multi-server:$SHA -f ./server/Dockerfile.dev ./server
-docker build -t ckilcioglu/multi-worker:latest -t ckilcioglu/multi-worker:$SHA-f ./worker/Dockerfile.dev ./worker
+docker build -t ckilcioglu/multi-worker:latest -t ckilcioglu/multi-worker:$SHA -f ./worker/Dockerfile.dev ./worker
 
 docker push ckilcioglu/multi-client:latest
 docker push ckilcioglu/multi-server:latest
